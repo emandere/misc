@@ -1,11 +1,11 @@
 from numpy import *
 import matplotlib.pyplot as plt
+
 size = 101
-center = int(round((size - 1) / 2))
-Psi = full((size,2),0.j)
-P = full(size,0.)
 N = 60
 v=sqrt(0.5)
+center = int(round((size - 1) / 2))
+Psi = full((size,2),0.j)
 H = v * array([[1,1],[1,-1]])
 Psi[center] = v * array([1,1j])
 listPsi = [Psi]
