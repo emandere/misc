@@ -1,6 +1,7 @@
 from numpy import *
 import matplotlib.pyplot as plt
 
+
 size = 101
 N = 60
 v=sqrt(0.5)
@@ -19,6 +20,6 @@ for j in range(N):
                
       listPsi.append(newPsi)
       
-plt.plot([abs(x[0])**2 + abs(x[1])**2 for x in listPsi[-1] ])
+plt.plot([abs(x[0])**2 + abs(x[1])**2 for x in listPsi[-1][N%2::2] ])
 plt.show()
       
